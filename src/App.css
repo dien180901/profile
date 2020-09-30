@@ -2,6 +2,8 @@
   text-align: center;
 
 }
+.Nav-default-login-form{
+}
 .List-job{
   display: flex;
   width:100%;
@@ -82,6 +84,7 @@
   background-color:white;
   display:flex;
   justify-content: center;
+ 
 }
 .dien-login{
   background-color:grey;
