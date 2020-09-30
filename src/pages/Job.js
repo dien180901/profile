@@ -25,7 +25,7 @@ const Job = () => {
     let history=useHistory();
     const getJobData=async()=>{
         try{
-            const url=`http://localhost:5001/jobs`
+            const url=`${process.env.REACT_APP_BACKEND_SERVER_URL}`
             const response= await fetch(url)
             const data = await response .json()
             setOriginalJobs(data)
