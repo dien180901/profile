@@ -1,7 +1,113 @@
 .App {
   text-align: center;
+
+}
+.List-job{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.job-content{
+  background-color:rgb(233, 198, 133);
+  width:80%;
+  border:3px solid orange;
+}
+.dien-form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:84%;
+
 }
 
+.input-email{
+  width:100%;
+  border:1px solid rgb(202, 196, 196);
+  height:28px;
+}
+.input-password{
+  width:100%;
+  border:1px solid rgb(202, 196, 196);
+  height:28px;
+}
+.h4-form-login{
+  color:rgb(202, 196, 196);
+  font-size:10px;
+}
+.email-password{
+  margin-top:1%;
+}
+.h5-email-password{
+  font-size:14px!important;
+
+}
+.email-address{
+  margin-top:3%;
+}
+.h5-email-address{
+  font-size:14px!important;
+
+}
+.dien-nav-form-Login{
+  height:13%;
+  width:100%;
+  background-color:black;
+  margin-top:5%;
+  font-size:22px;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dien-nav-form-img{
+  height: 80%;
+  /* height:80%;
+  width:5%; */
+  
+}
+.img-login-form{
+  height:100%;
+  width:auto;
+}
+.login-form-button{
+  margin-top:10px;
+}
+.dien-form-login-parent{
+  width:70%;
+  height:65%;
+  background-color:white;
+  display:flex;
+  justify-content: center;
+}
+.dien-login{
+  background-color:grey;
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dien-nav{
+  position: fixed;
+  height:50px;
+  background-color:black;
+  width:100%;
+  display:flex;
+  align-items: center;
+}
+.dien-parent{
+  height:60%;
+  width:11%;
+  margin-left:15%;
+}
+.dien-image{
+  height:100%;
+  width:100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

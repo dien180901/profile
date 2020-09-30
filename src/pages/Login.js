@@ -1,9 +1,15 @@
 import React from 'react'
-
-export const Login = () => {
+import Navbar from 'react-bootstrap/Navbar'
+import FormLogin from './FormLogin'
+import Nav from './Nav'
+const Login = () => {
     return (
-        <div>
+        
+        <div className="dien-login">
             
+            <FormLogin></FormLogin>
         </div>
     )
 }
+
+export default Login
