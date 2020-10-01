@@ -1,23 +1,31 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Badge from 'react-bootstrap/Badge'
 import { useHistory } from "react-router-dom";
 import moment from 'moment';
 import "bootstrap/dist/css/bootstrap.min.css";
+import {useDispatch,useSelector} from "react-redux";
+import {jobAction} from "../redux/action/jobAction";
 
 const JobCard = (props) => {
     const history=useHistory()
+    const dispatch=useDispatch();
+    const user=useSelector((state)=>state.auth.user)
     const jobSelect = () => {
-        history.push(`/job/${props.job.id}`);
+        history.push(`/jobs/${props.id}`);
       };
-    
+ 
     return (
-        <div className="job-content" onClick={() => jobSelect()}>
-          <Row>
+        <div className="job-content" onClick={() =>{jobSelect()} }>
+         
+         <Row>
             <Col>
               <div className="jobcard-logo">
+                <div className="logo-image-border">
                 <img src={props.job.img} />
+
+                </div>
               </div>
             </Col>
             <Col xs={8}>
@@ -33,7 +41,7 @@ const JobCard = (props) => {
                 </div>
                 <div>
                   {props.job.tags.map(tag => (
-                    <Badge variant="secondary" className="badge-style">
+                    <Badge variant="secondary" className="badge-style" className="dien-badge">
                       {tag}
                     </Badge>
                   ))}

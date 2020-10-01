@@ -11,7 +11,7 @@ const Routes = () => {
         <Route path="/" exact component={Job} />
         <Route path="/Login" exact component={Login} />
     
-        <ProtectedRoute path="/job/:id" render ={(props)=><JobDetail name="dien"/>}/> 
+        <ProtectedRoute path="/jobs/:id" render ={(props)=><JobDetail name="dien"/>}/> 
         <Route path="*" component={NotFound}/>
     </Switch>
     );

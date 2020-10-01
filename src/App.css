@@ -1,20 +1,61 @@
-.App {
-  text-align: center;
 
+.background-detail{
+  background-color:#dddada;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Nav-default-login-form{
+.my-li{
+  font-size:18px;
+  font-weight: 400;
 }
+.dienh5{
+  color:rgb(160, 156, 156);
+  font-size:16px;
+  margin-top:5px;
+}
+.dien-badge{
+  margin-left:5px;
+}
+.infor-block{
+  width:80%;
+  margin-top:40px;
+  margin-left:40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.jobcard-logo{
+   margin-left:40px; 
+  display: inline-block;
+  padding:3px;
+  border:1px solid black;
+  background-color: rgb(233, 177, 73);
+}
+
 .List-job{
   display: flex;
   width:100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:30px;
+
 }
 .job-content{
-  background-color:rgb(233, 198, 133);
+  background-color:#fff1e1!important;
   width:80%;
-  border:3px solid orange;
+  border-top:2px solid rgba(255,192,121,.5);
+  border-bottom:2px solid rgba(255,192,121,.5);
+  padding:27px 0;
+  transition:all .25s ease;
+}
+.job-content:hover{
+  background: white!important;
+  border-color:transparent;
+  box-shadow:0 0 5px 1px #bcbcbc;
+  cursor:pointer;
 }
 .dien-form-login{
   display: flex;
@@ -136,7 +177,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.card-Detail{
+  height:85%;
+  width:70%;
+  background-color: white;
+  margin-top:80px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -144,4 +190,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.basic-nav-dropdown {
+  margin-right: 10%;
 }
